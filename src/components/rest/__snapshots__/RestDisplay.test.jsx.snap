@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RestDisplay component renders RestDisplay 1`] = `
+<div>
+  <t
+    collapseStringsAfterLength={false}
+    collapsed={false}
+    defaultValue={null}
+    displayDataTypes={true}
+    displayObjectSize={true}
+    enableClipboard={true}
+    groupArraysAfterLength={100}
+    iconStyle="triangle"
+    indentWidth={4}
+    name="root"
+    onAdd={false}
+    onDelete={false}
+    onEdit={false}
+    onSelect={false}
+    shouldCollapse={false}
+    sortKeys={false}
+    src={Array []}
+    style={Object {}}
+    theme="rjv-default"
+    validationMessage="Validation Error"
+  />
+</div>
+`;
