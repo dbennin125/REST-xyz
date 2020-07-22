@@ -5,16 +5,30 @@ import RestForm from './RestForm';
 
 describe('RestForm component', () => {
   let wrapper;
+  let handleChange;
+  
   beforeEach(() => {
+    handleChange = jest.fn();
     wrapper = shallow(<RestForm 
       URL="Hello World!" 
-      method="GET"/>);
+      method="GET"
+      onChange={handleChange}
+    />);
   });
+
   it('has a text input with a value set to text prop', () => {
     expect(wrapper.find('input[name="text"]').prop('value')).toEqual('Hello World!');
   });
   it('has a GET radio input with a value set to method prop', () => {
     expect(wrapper.find('input[name="method"]').findWhere(n => n.prop('checked')).prop('value')).toEqual('GET');
+  });
+  it('invokes an onChange prop when text input is changed', () => {
+    wrapper.find('input[name="text"]').simulate('change');
+    expect(handleChange).toHaveBeenCalledTimes(1);
+  });
+  it('invokes an onChange prop when radio input is changed', () => {
+    wrapper.find('input[name="method"]').findWhere(radios => radios.prop('checked')).simulate('change');
+    expect(handleChange).toHaveBeenCalledTimes(1);
   });
 
  
