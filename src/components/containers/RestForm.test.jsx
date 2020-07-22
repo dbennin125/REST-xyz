@@ -16,8 +16,18 @@ describe('RestContainer component', () => {
   });
 
   it('has a text state', () => {
-    expect(wrapper.state('text')).not.toBeUndefined();
+    expect(wrapper.state('URL')).not.toBeUndefined();
   });
+  it('has a method state', () => {
+    expect(wrapper.state('method')).not.toBeUndefined();
+  });
+  it('has a body state', () => {
+    expect(wrapper.state('body')).not.toBeUndefined();
+  });
+  it('has a display state', () => {
+    expect(wrapper.state('display')).toEqual({ 'working':'Nothing to see here!' });
+  });
+
 
 });
   

@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 
 export default class RestContainer extends Component {
     state={
-      text: '' 
+      URL: '', 
+      method: '',
+      body: '',
+      display: { 'working':'Nothing to see here!' }
+
     }
     
     render() {
