@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import ReactJson from 'react-json-view';
 
-const restDisplay = ({ display }) => {
+const RestDisplay = ({ display }) => {
   return (
     <div>
       <ReactJson src={display} />
@@ -11,8 +11,8 @@ const restDisplay = ({ display }) => {
   );
 };
 
-restDisplay.propTypes = {
+RestDisplay.propTypes = {
   display: PropTypes.array
 };
 
-export default restDisplay;
+export default RestDisplay;
