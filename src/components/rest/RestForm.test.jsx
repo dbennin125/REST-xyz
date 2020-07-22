@@ -17,6 +17,7 @@ describe('RestForm component', () => {
       method="GET"
       onChange={handleChange}
       onSubmit={handleSubmit}
+      body="some String"
     />);
   });
 

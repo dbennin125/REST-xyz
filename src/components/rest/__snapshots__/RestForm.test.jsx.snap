@@ -53,5 +53,10 @@ exports[`RestForm component renders the component 1`] = `
   <button>
     Submit button
   </button>
+  <textarea
+    name="body"
+    onChange={[MockFunction]}
+    value="some String"
+  />
 </form>
 `;
