@@ -27,7 +27,15 @@ describe('RestContainer component', () => {
   it('has a display state', () => {
     expect(wrapper.state('display')).toEqual({ 'working':'Nothing to see here!' });
   });
-
+  it('has a handleChange method that updates URL state', () =>{
+    wrapper.instance().handleChange({
+      target: {
+        name:'text',
+        value: 'new text value'
+      }
+    });
+    expect(wrapper.state('text')).toEqual('new text value');
+  });
 
 });
   

@@ -8,6 +8,9 @@ export default class RestContainer extends Component {
       display: { 'working':'Nothing to see here!' }
 
     }
+    handleChange =({ target }) => {
+      this.setState({ [target.name]: target.value });
+    }
     
     render() {
       return (
