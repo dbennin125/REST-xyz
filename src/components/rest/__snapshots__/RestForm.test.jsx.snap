@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RestForm component renders the component 1`] = `
+<form
+  onSubmit={[MockFunction]}
+>
+  <input
+    name="text"
+    onChange={[MockFunction]}
+    type="text"
+    value="Hello World!"
+  />
+  <label>
+    <input
+      checked={true}
+      name="method"
+      onChange={[MockFunction]}
+      type="radio"
+      value="GET"
+    />
+    GET
+  </label>
+  <label>
+    <input
+      checked={false}
+      name="method"
+      onChange={[MockFunction]}
+      type="radio"
+      value="PUT"
+    />
+    PUT
+  </label>
+  <label>
+    <input
+      checked={false}
+      name="method"
+      onChange={[MockFunction]}
+      type="radio"
+      value="POST"
+    />
+    POST
+  </label>
+  <label>
+    <input
+      checked={false}
+      name="method"
+      onChange={[MockFunction]}
+      type="radio"
+      value="DELETE"
+    />
+    DELETE
+  </label>
+  <button>
+    Submit button
+  </button>
+</form>
+`;

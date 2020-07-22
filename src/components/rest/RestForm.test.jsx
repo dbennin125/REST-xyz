@@ -39,6 +39,8 @@ describe('RestForm component', () => {
     expect(handleSubmit).toHaveBeenCalledTimes(1);
   });
 
- 
+  it('renders the component', () => {
+    expect(wrapper).toMatchSnapshot();
+  });
 });
   
