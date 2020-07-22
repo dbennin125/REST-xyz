@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const RestForm = ({ URL, method, onChange }) => (
-  <form>
+const RestForm = ({ URL, method, onChange, onSubmit }) => (
+  <form onSubmit={onSubmit}>
     <input type="text" name="text" value={URL} onChange={onChange}/>
     <label>
       <input type="radio" name="method" value="GET" checked={method === 'GET'} onChange={onChange}/>
@@ -20,13 +20,15 @@ const RestForm = ({ URL, method, onChange }) => (
       <input type="radio" name="method" value="DELETE" checked={method === 'DELETE'} onChange={onChange}/>
         DELETE
     </label>
+    <button>Submit button</button>
   </form>
 );
 
 RestForm.propTypes = {
   URL: PropTypes.string.isRequired,
   method: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired
+  onChange: PropTypes.func.isRequired,
+  onSubmit: PropTypes.func.isRequired
 };
 
 export default RestForm;

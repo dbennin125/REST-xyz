@@ -6,13 +6,17 @@ import RestForm from './RestForm';
 describe('RestForm component', () => {
   let wrapper;
   let handleChange;
+  let handleSubmit;
   
   beforeEach(() => {
     handleChange = jest.fn();
+    handleSubmit = jest.fn();
+
     wrapper = shallow(<RestForm 
       URL="Hello World!" 
       method="GET"
       onChange={handleChange}
+      onSubmit={handleSubmit}
     />);
   });
 
@@ -29,6 +33,10 @@ describe('RestForm component', () => {
   it('invokes an onChange prop when radio input is changed', () => {
     wrapper.find('input[name="method"]').findWhere(radios => radios.prop('checked')).simulate('change');
     expect(handleChange).toHaveBeenCalledTimes(1);
+  });
+  it('invokes onSubmit prop for the form when button pressed', () => {
+    wrapper.find('form').simulate('submit');
+    expect(handleSubmit).toHaveBeenCalledTimes(1);
   });
 
  
