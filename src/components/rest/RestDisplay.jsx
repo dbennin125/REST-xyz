@@ -5,14 +5,16 @@ import ReactJson from 'react-json-view';
 
 const RestDisplay = ({ display }) => {
   return (
-    <div>
-      <ReactJson src={display} />
-    </div>
+    <>
+      <div>
+        <ReactJson src={display}  />
+      </div>
+    </>
   );
 };
 
 RestDisplay.propTypes = {
-  display: PropTypes.array
+  display: PropTypes.any.isRequired
 };
 
 export default RestDisplay;

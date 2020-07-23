@@ -8,7 +8,7 @@ export default class RestContainer extends Component {
       URL: '', 
       method: '',
       body: '',
-      display: [{ 'working':'Nothing to see here!' }],
+      display: { 'working':'Nothing to see here!' },
       history: []
 
     }
@@ -18,12 +18,11 @@ export default class RestContainer extends Component {
   
     handleSubmit = event => {
       event.preventDefault();
-      const { URL, method } = this.state;
+      const { URL, method, body } = this.state;
       // console.log(URL, 'LJFLJSDLFJ:LJKD');
-
-      Promise.all([fetchAPI(URL, method)])
-        .then(item => console.log(item));
-      // .then(([{ body }]) => this.setState({ body }));
+      fetchAPI(URL, method, body)
+      //   .then(item => console.log(item));
+        .then(display => this.setState({ display }));
     }
 
     
