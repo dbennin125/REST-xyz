@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const HistoryItem = ({ url, method, body }) => {
+const HistoryItem = ({ url, method, id }) => {
   return (
     <>
-      <p>{url}, {method}, {body}</p>  
+      <p id={id}>{method}</p>
+      <span id={id}>{url}</span> 
     </>
   );
 };
@@ -12,7 +13,7 @@ const HistoryItem = ({ url, method, body }) => {
 HistoryItem.propTypes = {
   url: PropTypes.string.isRequired,
   method: PropTypes.string.isRequired,
-  body: PropTypes.string
+  id: PropTypes.string
 
 };
 

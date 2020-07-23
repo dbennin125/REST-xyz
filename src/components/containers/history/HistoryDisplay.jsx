@@ -1,10 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import HistoryItem from './HistoryItem';
+
 
 const HistoryDisplay = ({ history }) => {
-  const historyElement = history.map(item => (
+  const historyElement = history.map(page => (
     <li key={Date.now()}>
-      {item.url}
+      <HistoryItem 
+        url={page.url} 
+        method={page.method} 
+        id={`${page.method} + ${page.url}}`}
+      />
     </li>
   ));
   return  (
@@ -15,12 +21,11 @@ const HistoryDisplay = ({ history }) => {
 };
 
 HistoryDisplay.propTypes = {
-  history: PropTypes
-    .arrayOf(PropTypes.shape({
-      url: PropTypes.string.isRequired, 
-      method: PropTypes.string.isRequired,
-      body: PropTypes.string
-    })).isRequired
+  history: PropTypes.arrayOf(PropTypes.shape({
+    url: PropTypes.string.isRequired, 
+    method: PropTypes.string.isRequired,
+  }).isRequired
+  )
 };
 
 export default HistoryDisplay;
