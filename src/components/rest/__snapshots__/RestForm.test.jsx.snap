@@ -5,7 +5,7 @@ exports[`RestForm component renders the component 1`] = `
   onSubmit={[MockFunction]}
 >
   <input
-    name="text"
+    name="URL"
     onChange={[MockFunction]}
     type="text"
     value="Hello World!"
