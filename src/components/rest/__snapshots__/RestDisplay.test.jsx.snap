@@ -2,7 +2,7 @@
 
 exports[`RestDisplay component renders RestDisplay 1`] = `
 <Fragment>
-  <div>
+  <pre>
     <t
       collapseStringsAfterLength={false}
       collapsed={false}
@@ -306,6 +306,6 @@ exports[`RestDisplay component renders RestDisplay 1`] = `
       theme="rjv-default"
       validationMessage="Validation Error"
     />
-  </div>
+  </pre>
 </Fragment>
 `;

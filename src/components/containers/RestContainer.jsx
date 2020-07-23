@@ -11,25 +11,26 @@ export default class RestContainer extends Component {
       method: '',
       body: '',
       display: { 'working':'Nothing to see here!' },
-      history: {}
-
+      history: []
     }
+
     handleChange =({ target }) => {
       this.setState({ [target.name]: target.value });
     }
   
     handleSubmit = event => {
       event.preventDefault();
-      const { url, method, body } = this.state;
+      const { url, method, body, history } = this.state;
       // console.log(url, 'LJFLJSDLFJ:LJKD');
       fetchAPI(url, method, body)
       //   .then(item => console.log(item));
         .then(display => this.setState({ display }));
+      this.setState({ history: [...history, { url, method, }] });
     }
-
+ 
     
     render() {
-      const { url, method, body, display } = this.state;
+      const { url, method, body, display, history } = this.state;
       return (
         <div>
           <RestForm URL={url} 
@@ -38,8 +39,8 @@ export default class RestContainer extends Component {
             onSubmit={this.handleSubmit}
             body={body}
           />
-          <RestDisplay display={display} />
-          {/* <HistoryDisplay history={history}/> */}
+          <RestDisplay display={display}/>
+          <HistoryDisplay history={history}/>
       
           
         </div>
