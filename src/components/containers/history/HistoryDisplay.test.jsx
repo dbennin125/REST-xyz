@@ -7,7 +7,8 @@ describe('HistoryDisplay component', () => {
   beforeEach(() => {
     const history = [
       { url:'https://futuramaapi.herokuapp.com/api/quotes/', method: 'GET' },
-      { url:'https://futuramaapi.herokuapp.com/api/quotes/1', method: 'POST' },
+      { url:'https://futuramaapi.herokuapp.com/api/quotes/1', method: 'POST', 
+        body: 'A bunch of new JSON and junk' },
       { url:'https://futuramaapi.herokuapp.com/api/quotes/2', method:'GET', },
       { url:'https://futuramaapi.herokuapp.com/api/quotes/3', method:'POST' },
       { url:'https://futuramaapi.herokuapp.com/api/quotes/4', method:'PUT',

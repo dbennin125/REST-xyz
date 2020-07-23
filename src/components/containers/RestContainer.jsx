@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { fetchAPI } from '../../services/fetchAPI';
 import RestForm from '../rest/RestForm';
 import RestDisplay from '../rest/RestDisplay';
+// import HistoryDisplay from './history/HistoryDisplay';
 
 export default class RestContainer extends Component {
     state={
@@ -9,7 +10,7 @@ export default class RestContainer extends Component {
       method: '',
       body: '',
       display: { 'working':'Nothing to see here!' },
-      history: []
+      // history: []
 
     }
     handleChange =({ target }) => {
@@ -22,7 +23,7 @@ export default class RestContainer extends Component {
       // console.log(url, 'LJFLJSDLFJ:LJKD');
       fetchAPI(url, method, body)
       //   .then(item => console.log(item));
-        .then(display => this.setState({ display }));
+        .then(display => this.setState({ display, history }));
     }
 
     
@@ -30,8 +31,15 @@ export default class RestContainer extends Component {
       const { url, method, body, display } = this.state;
       return (
         <div>
-          <RestForm URL={url} method={method} onChange={this.handleChange} onSubmit={this.handleSubmit} body={body}/>
+          <RestForm URL={url} 
+            method={method}
+            onChange={this.handleChange} 
+            onSubmit={this.handleSubmit}
+            body={body}
+          />
           <RestDisplay display={display} />
+      
+          
         </div>
       );
     }

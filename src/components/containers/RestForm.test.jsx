@@ -30,11 +30,11 @@ describe('RestContainer component', () => {
   it('has a handleChange method that updates url state', () =>{
     wrapper.instance().handleChange({
       target: {
-        name:'text',
-        value: 'new text value'
+        name:'url',
+        value: 'new url value'
       }
     });
-    expect(wrapper.state('text')).toEqual('new text value');
+    expect(wrapper.state('url')).toEqual('new url value');
   });
 
 });

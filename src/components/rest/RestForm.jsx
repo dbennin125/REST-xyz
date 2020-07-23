@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const RestForm = ({ URL, method, onChange, onSubmit, body }) => (
   <form onSubmit={onSubmit}>
-    <input type="text" name="URL" value={URL} onChange={onChange}/>
+    <input type="text" name="url" value={URL} onChange={onChange}/>
     <label>
       <input type="radio" name="method" value="GET" checked={method === 'GET'} onChange={onChange}/>
         GET
