@@ -16,7 +16,7 @@ describe('RestContainer component', () => {
   });
 
   it('has a text state', () => {
-    expect(wrapper.state('URL')).not.toBeUndefined();
+    expect(wrapper.state('url')).not.toBeUndefined();
   });
   it('has a method state', () => {
     expect(wrapper.state('method')).not.toBeUndefined();
@@ -27,7 +27,7 @@ describe('RestContainer component', () => {
   it('has a display state', () => {
     expect(wrapper.state('display')).toEqual({ 'working':'Nothing to see here!' });
   });
-  it('has a handleChange method that updates URL state', () =>{
+  it('has a handleChange method that updates url state', () =>{
     wrapper.instance().handleChange({
       target: {
         name:'text',

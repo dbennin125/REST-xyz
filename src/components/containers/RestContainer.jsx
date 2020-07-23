@@ -5,7 +5,7 @@ import RestDisplay from '../rest/RestDisplay';
 
 export default class RestContainer extends Component {
     state={
-      URL: '', 
+      url: '', 
       method: '',
       body: '',
       display: { 'working':'Nothing to see here!' },
@@ -18,19 +18,19 @@ export default class RestContainer extends Component {
   
     handleSubmit = event => {
       event.preventDefault();
-      const { URL, method, body } = this.state;
-      // console.log(URL, 'LJFLJSDLFJ:LJKD');
-      fetchAPI(URL, method, body)
+      const { url, method, body } = this.state;
+      // console.log(url, 'LJFLJSDLFJ:LJKD');
+      fetchAPI(url, method, body)
       //   .then(item => console.log(item));
         .then(display => this.setState({ display }));
     }
 
     
     render() {
-      const { URL, method, body, display } = this.state;
+      const { url, method, body, display } = this.state;
       return (
         <div>
-          <RestForm URL={URL} method={method} onChange={this.handleChange} onSubmit={this.handleSubmit} body={body}/>
+          <RestForm URL={url} method={method} onChange={this.handleChange} onSubmit={this.handleSubmit} body={body}/>
           <RestDisplay display={display} />
         </div>
       );

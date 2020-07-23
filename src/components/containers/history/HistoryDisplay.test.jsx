@@ -6,18 +6,19 @@ describe('HistoryDisplay component', () => {
   let wrapper;
   beforeEach(() => {
     const history = [
-      'https://futuramaapi.herokuapp.com/api/quotes/',
-      'https://futuramaapi.herokuapp.com/api/quotes/1',
-      'https://futuramaapi.herokuapp.com/api/quotes/2',
-      'https://futuramaapi.herokuapp.com/api/quotes/3',
-      'https://futuramaapi.herokuapp.com/api/quotes/4'
+      { url:'https://futuramaapi.herokuapp.com/api/quotes/', method: 'GET' },
+      { url:'https://futuramaapi.herokuapp.com/api/quotes/1', method: 'POST' },
+      { url:'https://futuramaapi.herokuapp.com/api/quotes/2', method:'GET', },
+      { url:'https://futuramaapi.herokuapp.com/api/quotes/3', method:'POST' },
+      { url:'https://futuramaapi.herokuapp.com/api/quotes/4', method:'PUT',
+        body: 'add in this text!'  }
     ];
     wrapper = shallow(<HistoryDisplay 
       history={history} 
     />);
   });
-  it('to have 5 list items', () => {
-    expect(wrapper.find('li')).toHaveLength(3);
 
+  it('to have 5 list items', () => {
+    expect(wrapper.find('li')).toHaveLength(5);
   });
 });
