@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { fetchAPI } from '../../services/fetchAPI';
 import RestForm from '../rest/RestForm';
-import RestDisplay from '../rest/restDisplay';
+import RestDisplay from '../rest/RestDisplay';
 
 export default class RestContainer extends Component {
     state={
