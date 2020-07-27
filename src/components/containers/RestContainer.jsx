@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { fetchAPI } from '../../services/fetchAPI';
+import  fetchAPI from '../../services/fetchAPI';
 import RestForm from '../rest/RestForm';
 import RestDisplay from '../rest/RestDisplay';
 import HistoryDisplay from './history/HistoryDisplay';
@@ -21,14 +21,18 @@ export default class RestContainer extends Component {
     handleSubmit = event => {
       event.preventDefault();
       const { url, method, body, history } = this.state;
+      
+      // if(history.id === method + url) {
+      //   return !history;
+      // }
+    
       // console.log(url, 'LJFLJSDLFJ:LJKD');
       fetchAPI(url, method, body)
-      //   .then(item => console.log(item));
+        //   .then(item => console.log(item));
         .then(display => this.setState({ display }));
-      this.setState({ history: [...history, { url, method, }] });
+      this.setState({ history: [...history, { url, method }] });
     }
  
-    
     render() {
       const { url, method, body, display, history } = this.state;
       return (
@@ -39,10 +43,8 @@ export default class RestContainer extends Component {
             onSubmit={this.handleSubmit}
             body={body}
           />
-          <RestDisplay display={display}/>
+          <RestDisplay display={display} />
           <HistoryDisplay history={history}/>
-      
-          
         </div>
       );
     }

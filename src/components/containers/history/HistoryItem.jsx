@@ -4,8 +4,10 @@ import PropTypes from 'prop-types';
 const HistoryItem = ({ url, method, id }) => {
   return (
     <>
-      <p id={id}>{method}</p>
-      <span id={id}>{url}</span> 
+      <section id={id}>
+        <p id={id}>{method}</p>
+        <span id={id}>{url}</span> 
+      </section>
     </>
   );
 };

@@ -5,7 +5,7 @@ import HistoryItem from './HistoryItem';
 
 const HistoryDisplay = ({ history }) => {
   const historyElement = history.map(page => (
-    <li key={Date.now()}>
+    <li key={` ${Date.now()} `} >
       <HistoryItem 
         url={page.url} 
         method={page.method} 
