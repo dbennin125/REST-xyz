@@ -1,0 +1,311 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RestDisplay component renders RestDisplay 1`] = `
+<Fragment>
+  <pre>
+    <t
+      collapseStringsAfterLength={false}
+      collapsed={false}
+      defaultValue={null}
+      displayDataTypes={true}
+      displayObjectSize={true}
+      enableClipboard={true}
+      groupArraysAfterLength={100}
+      iconStyle="triangle"
+      indentWidth={4}
+      name="root"
+      onAdd={false}
+      onDelete={false}
+      onEdit={false}
+      onSelect={false}
+      shouldCollapse={false}
+      sortKeys={false}
+      src={
+        Array [
+          Array [
+            Object {
+              "_id": "5f18a0a13cce36f6147d183f",
+              "about": "Laborum ex occaecat nisi cillum Lorem laboris. Aute dolore sit officia reprehenderit sit exercitation. Aute nulla aute in occaecat dolor velit reprehenderit minim. Eu enim cupidatat sint voluptate aliqua sunt deserunt consectetur tempor. Lorem sit in dolore eu ipsum elit ex esse cupidatat sit.
+",
+              "address": "540 Pooles Lane, Rodanthe, Maine, 8008",
+              "age": 27,
+              "balance": "$1,549.43",
+              "company": "VORTEXACO",
+              "email": "georgiamonroe@vortexaco.com",
+              "eyeColor": "brown",
+              "favoriteFruit": "strawberry",
+              "friends": Array [
+                Object {
+                  "id": 0,
+                  "name": "Rosalind Conley",
+                },
+                Object {
+                  "id": 1,
+                  "name": "Reynolds Bartlett",
+                },
+                Object {
+                  "id": 2,
+                  "name": "Darla Fernandez",
+                },
+              ],
+              "gender": "female",
+              "greeting": "Hello, Georgia Monroe! You have 7 unread messages.",
+              "guid": "45231932-d4f3-4dac-8c76-80be824324fc",
+              "index": 0,
+              "isActive": true,
+              "latitude": -30.246735,
+              "longitude": 47.252219,
+              "name": "Georgia Monroe",
+              "phone": "+1 (930) 469-3750",
+              "picture": "http://placehold.it/32x32",
+              "registered": "2016-12-26T05:35:08 +08:00",
+              "tags": Array [
+                "magna",
+                "eu",
+                "reprehenderit",
+                "id",
+                "proident",
+                "eiusmod",
+                "ullamco",
+              ],
+            },
+            Object {
+              "_id": "5f18a0a19ccd1cf9f6f1b7f4",
+              "about": "Deserunt enim ad do fugiat do excepteur sunt dolor do quis culpa ea tempor. Adipisicing voluptate id aliqua nisi culpa anim ad labore aliquip voluptate. Sunt do eu laboris ad elit cillum ad ullamco quis ea est laboris. Culpa sint nostrud consectetur amet nulla. Deserunt anim quis aute laboris est.
+",
+              "address": "525 Croton Loop, Greer, Michigan, 9813",
+              "age": 28,
+              "balance": "$1,818.19",
+              "company": "ZIALACTIC",
+              "email": "hydepatrick@zialactic.com",
+              "eyeColor": "blue",
+              "favoriteFruit": "apple",
+              "friends": Array [
+                Object {
+                  "id": 0,
+                  "name": "Tate Silva",
+                },
+                Object {
+                  "id": 1,
+                  "name": "Kaufman Graves",
+                },
+                Object {
+                  "id": 2,
+                  "name": "Anne Simmons",
+                },
+              ],
+              "gender": "male",
+              "greeting": "Hello, Hyde Patrick! You have 4 unread messages.",
+              "guid": "99bee783-0f2e-44b5-8ac3-fc7cae8bd373",
+              "index": 1,
+              "isActive": false,
+              "latitude": -68.898311,
+              "longitude": 138.543202,
+              "name": "Hyde Patrick",
+              "phone": "+1 (838) 414-3336",
+              "picture": "http://placehold.it/32x32",
+              "registered": "2016-10-29T07:58:56 +07:00",
+              "tags": Array [
+                "culpa",
+                "irure",
+                "ea",
+                "enim",
+                "dolor",
+                "qui",
+                "reprehenderit",
+              ],
+            },
+            Object {
+              "_id": "5f18a0a19283a68da0f481a2",
+              "about": "Qui adipisicing est pariatur dolore excepteur aliquip laboris minim velit consequat elit laboris. Eu qui eiusmod eu incididunt ex. Enim consequat veniam commodo ipsum qui tempor consectetur voluptate anim sint proident adipisicing ut. Ut ipsum sit adipisicing sint duis ut Lorem mollit occaecat ad sit. Enim dolor ut labore Lorem culpa ea est magna proident. Duis do ullamco proident aliquip et pariatur labore laborum ex elit consectetur. Cillum cillum enim enim reprehenderit anim dolor nostrud est.
+",
+              "address": "207 Leonard Street, Bangor, Federated States Of Micronesia, 1699",
+              "age": 32,
+              "balance": "$1,277.81",
+              "company": "REMOTION",
+              "email": "deborapittman@remotion.com",
+              "eyeColor": "blue",
+              "favoriteFruit": "apple",
+              "friends": Array [
+                Object {
+                  "id": 0,
+                  "name": "Letitia Hammond",
+                },
+                Object {
+                  "id": 1,
+                  "name": "Conrad Burris",
+                },
+                Object {
+                  "id": 2,
+                  "name": "Coffey Gaines",
+                },
+              ],
+              "gender": "female",
+              "greeting": "Hello, Debora Pittman! You have 2 unread messages.",
+              "guid": "2eb5a5ae-2acc-4554-acc3-12f143b79431",
+              "index": 2,
+              "isActive": true,
+              "latitude": -10.399879,
+              "longitude": 24.564549,
+              "name": "Debora Pittman",
+              "phone": "+1 (971) 511-3514",
+              "picture": "http://placehold.it/32x32",
+              "registered": "2018-01-23T08:27:31 +08:00",
+              "tags": Array [
+                "ea",
+                "voluptate",
+                "mollit",
+                "ea",
+                "aliqua",
+                "incididunt",
+                "cupidatat",
+              ],
+            },
+            Object {
+              "_id": "5f18a0a1b40b5ff3ddb81eda",
+              "about": "Reprehenderit sunt ea adipisicing dolor id ex nostrud irure voluptate. Eiusmod sunt dolor deserunt minim esse in. Nulla labore dolore ipsum aute minim incididunt ad. Laborum aute ut esse exercitation Lorem deserunt culpa esse aliquip nulla sunt.
+",
+              "address": "596 Celeste Court, Alafaya, Minnesota, 8833",
+              "age": 32,
+              "balance": "$1,592.29",
+              "company": "KONNECT",
+              "email": "alineholder@konnect.com",
+              "eyeColor": "blue",
+              "favoriteFruit": "strawberry",
+              "friends": Array [
+                Object {
+                  "id": 0,
+                  "name": "Winnie Cortez",
+                },
+                Object {
+                  "id": 1,
+                  "name": "Castillo Craig",
+                },
+                Object {
+                  "id": 2,
+                  "name": "Alejandra Duran",
+                },
+              ],
+              "gender": "female",
+              "greeting": "Hello, Aline Holder! You have 6 unread messages.",
+              "guid": "d24bd01f-d5a7-4911-8ce7-a695026a52b0",
+              "index": 3,
+              "isActive": false,
+              "latitude": -37.368602,
+              "longitude": 19.933944,
+              "name": "Aline Holder",
+              "phone": "+1 (908) 556-2214",
+              "picture": "http://placehold.it/32x32",
+              "registered": "2016-03-29T07:07:49 +07:00",
+              "tags": Array [
+                "occaecat",
+                "duis",
+                "ut",
+                "voluptate",
+                "ea",
+                "culpa",
+                "sunt",
+              ],
+            },
+            Object {
+              "_id": "5f18a0a18882e51db5607ec7",
+              "about": "Magna proident est ut reprehenderit ea anim irure est fugiat deserunt minim tempor commodo. Irure amet pariatur laborum cillum exercitation id ipsum minim sit amet enim Lorem consequat reprehenderit. Quis qui anim sunt sunt commodo reprehenderit sit cillum irure exercitation consectetur. Amet velit cillum magna adipisicing non qui esse dolor eiusmod nostrud. Incididunt elit excepteur reprehenderit est Lorem proident elit enim enim do sunt. Ullamco amet ipsum cillum occaecat ullamco culpa est aliquip. Est ut ipsum velit esse sint ex dolor irure occaecat labore.
+",
+              "address": "650 Polar Street, Zeba, Utah, 4749",
+              "age": 23,
+              "balance": "$1,266.20",
+              "company": "GOGOL",
+              "email": "whitehinton@gogol.com",
+              "eyeColor": "blue",
+              "favoriteFruit": "banana",
+              "friends": Array [
+                Object {
+                  "id": 0,
+                  "name": "Flowers Cash",
+                },
+                Object {
+                  "id": 1,
+                  "name": "Mosley Cole",
+                },
+                Object {
+                  "id": 2,
+                  "name": "Karina Aguilar",
+                },
+              ],
+              "gender": "male",
+              "greeting": "Hello, White Hinton! You have 7 unread messages.",
+              "guid": "3e24c6f1-d571-4212-8acc-0d7c7132ec33",
+              "index": 4,
+              "isActive": false,
+              "latitude": -72.002564,
+              "longitude": -88.40018,
+              "name": "White Hinton",
+              "phone": "+1 (987) 449-3435",
+              "picture": "http://placehold.it/32x32",
+              "registered": "2019-05-06T12:06:26 +07:00",
+              "tags": Array [
+                "eiusmod",
+                "dolore",
+                "laborum",
+                "dolore",
+                "cupidatat",
+                "ad",
+                "adipisicing",
+              ],
+            },
+            Object {
+              "_id": "5f18a0a1111060ee21327918",
+              "about": "Deserunt aliqua exercitation nulla dolor. Incididunt qui cillum exercitation culpa. Quis est ad et dolor incididunt cupidatat ipsum eiusmod dolore.
+",
+              "address": "744 Lott Place, Castleton, Northern Mariana Islands, 6714",
+              "age": 33,
+              "balance": "$1,782.61",
+              "company": "XYQAG",
+              "email": "josefastafford@xyqag.com",
+              "eyeColor": "brown",
+              "favoriteFruit": "strawberry",
+              "friends": Array [
+                Object {
+                  "id": 0,
+                  "name": "Marcia Padilla",
+                },
+                Object {
+                  "id": 1,
+                  "name": "Hardin Parrish",
+                },
+                Object {
+                  "id": 2,
+                  "name": "Vang Small",
+                },
+              ],
+              "gender": "female",
+              "greeting": "Hello, Josefa Stafford! You have 1 unread messages.",
+              "guid": "988f4afd-44aa-417f-9131-02a5d9e053eb",
+              "index": 5,
+              "isActive": false,
+              "latitude": -53.044947,
+              "longitude": -136.307932,
+              "name": "Josefa Stafford",
+              "phone": "+1 (896) 464-2188",
+              "picture": "http://placehold.it/32x32",
+              "registered": "2015-02-12T02:09:02 +08:00",
+              "tags": Array [
+                "incididunt",
+                "dolor",
+                "commodo",
+                "consectetur",
+                "laboris",
+                "tempor",
+                "nostrud",
+              ],
+            },
+          ],
+        ]
+      }
+      style={Object {}}
+      theme="rjv-default"
+      validationMessage="Validation Error"
+    />
+  </pre>
+</Fragment>
+`;
